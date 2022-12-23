@@ -3,8 +3,6 @@ export default class MainPage {
         this.acceptCookiesBtn = () => {return cy.get('[class*="cSsJix fqfWHQ eUnEoi itIjRb"]')},
         this.urlPage = ()=> {return cy.url({ timeout: 10000 })},
         this.careersLink = ()=> {return cy.get('a[href="/company/careers"] span>span')},
-        //this.pricingPageLink = ()=> {return cy.get('[class*="gdETaM"]').contains('Pricing')},
-        //this.resourcesPageLink = ()=> {return cy.get('[class="sc-7b3980dc-6 gdETaM"]').contains('Resources')},
         this.wirelessLink = ()=> {return cy.get('li~li~li~li~li~li span[class*="dlshfZ"]').contains('Wireless')},
         this.numberLookupLink = ()=> {return cy.get('li>a[href="/number-lookup"]')},
         this.readCustomerStoryLink = ()=> {return cy.get('a[href*="/lightspeed"]')} ,

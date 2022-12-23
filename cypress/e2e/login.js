@@ -17,8 +17,8 @@ When("A user enters the password {string}", (password)=>{
 When("A user clicks on the login button", ()=>{
   loginPage.clickLoginBtn();
 });
-Then("A user should see a app page and title-bar", () => {
-  loginPage.urlPage().should('include','app')
+Then("A user should see an app page and title-bar", () => {
+  loginPage.urlPage().should('include','app',)
   loginPage.titleBar().should('be.visible');
 });
 When("A user enters not valid email {string}", (email) => {

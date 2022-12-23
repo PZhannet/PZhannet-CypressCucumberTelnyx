@@ -7,7 +7,7 @@ Feature: telnux.com
     And A user enters the email "testtestunia@gmail.com"
     And A user enters the password "qwertyU789!!"
     And A user clicks on the login button
-    Then A user should see a app page and title-bar
+    Then A user should see an app page and title-bar
 
   Scenario: Login with not registered email
     When A user clicks Log in link

@@ -14,6 +14,7 @@ async function setupNodeEvents(on, config) {
 
 module.exports = defineConfig({
   e2e: {
+    defaultCommandTimeout: 10000,
     viewportWidth: 1366,
     viewportHeight: 768,
     specPattern: "**/*.feature",
