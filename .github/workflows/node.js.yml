@@ -27,5 +27,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
+    - run: npm install @badeball/cypress-cucumber-preprocessor
     - run: npm run build --if-present
-    - run: npm test
+    - run: npx cypress run
