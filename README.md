@@ -8,7 +8,7 @@
 
 ## Project set up 
     To clone progect and run it: 
-    $ git clone https://github.com/PZhannet/CypressCucumberTelnix.org
+    $ git clone https://github.com/PZhannet/CypressCucumberTelnyx.org
     $ npm install
 
 ## Running Tests
@@ -21,3 +21,12 @@
     To run a single test file: npx cypress run -- spec "cypress/e2e/**.feature"
 
 ## Report
+    This project uses a Mochawesome reporter. To merge and generate a report should use commands:
+    $ npm run report:merge
+    $npm run report:generate
+    Reports will be saved in the:
+    ..\docs\index.html
+## GitHub Pages
+    To see the automatically generated HTML report with test execution:
+    https://pzhannet.github.io/PZhannet-CypressCucumberTelnyx/
+    
