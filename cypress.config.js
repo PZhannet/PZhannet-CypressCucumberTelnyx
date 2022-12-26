@@ -18,7 +18,6 @@ module.exports = defineConfig({
       configFile: "reporter-config.json"
     },
   e2e: {
-    defaultCommandTimeout: 100000,
     viewportWidth: 1366,
     viewportHeight: 768,
     specPattern: "**/*.feature",

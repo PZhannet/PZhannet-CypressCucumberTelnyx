@@ -16,6 +16,6 @@ export default new class LoginPage extends mainPage {
     this.inputPassword().type(password);
   }
   clickLoginBtn() {
-    this.loginBtn().click();
+    this.loginBtn().click({force: true});
   }
 }

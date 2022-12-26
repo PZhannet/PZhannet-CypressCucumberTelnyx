@@ -10,7 +10,7 @@ export default class MainPage {
         this.nextItem = () => {return cy.get('[aria-label="Next Item"]')}
         this.picture = () => {return cy.get('[class="sc-9cd1e3e2-2 fCiTXY"]:first',{timeout:20*1000})}
         this.textRelatedToThePicture = () => { return cy.get('[class*="fCiTXY"][aria-hidden="false"]')}
-        this.urlPage = ()=> {return cy.url()}
+        this.urlPage = ()=> {return cy.url({timeout:20*1000})}
         this.talkToAnExpertBtn = ()=> {return cy.get('li>div a[href="/contact-us"]')},
         this.pricingPopover = ()=> {return  cy.get('[class*="iWLbyI"]')},
         this.menuBarLink = ()=> {return cy.get('[class*="gdETaM"]')},
