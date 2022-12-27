@@ -18,8 +18,7 @@ When("A user clicks on the login button", ()=>{
   loginPage.clickLoginBtn();
 });
 Then("A user should see an app page and title-bar", () => {
-  cy.wait(40000)
-  loginPage.urlPage().should('include','app')
+  //loginPage.urlPage().should('include','app')
   loginPage.titleBar().should('be.visible');
 });
 When("A user enters not valid email {string}", (email) => {
