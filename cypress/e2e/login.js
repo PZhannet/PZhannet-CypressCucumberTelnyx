@@ -16,7 +16,6 @@ When("A user enters the password {string}", (password)=>{
 });
 When("A user clicks on the login button", ()=>{
   loginPage.clickLoginBtn();
-  cy.wait(50000)
 });
 Then("A user should see an app page and title-bar", () => {
   loginPage.urlPage().should('include','app')
