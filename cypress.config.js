@@ -13,6 +13,12 @@ async function setupNodeEvents(on, config) {
 }
 
 module.exports = defineConfig({
+  defaultCommandTimeout: 5000,
+  execTimeout: 5000,
+  taskTimeout: 5000,
+  pageLoadTimeout: 30000,
+  requestTimeout: 5000,
+  responseTimeout: 30000,
   reporter: "cypress-multi-reporters",
     reporterOptions: {
       configFile: "reporter-config.json"
@@ -25,4 +31,5 @@ module.exports = defineConfig({
     setupNodeEvents,
     baseUrl: "https://telnyx.com",
   },
+  
 });
