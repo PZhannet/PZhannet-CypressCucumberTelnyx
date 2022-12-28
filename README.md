@@ -1,6 +1,10 @@
 ## Project description
 
-    Test different functionality for https://telnyx.com/
+    In this project created the:
+     1) 15 test cases to test the functionality of the  https://telnyx.com website;
+     2) test cases automated via Cypress framework with the Cucumber tool;
+     3) realized Pipeline on GitHub;
+     4) implemented automatic report deployment to GitHub Pages.
 
 ## Technologies
 
