@@ -13,7 +13,7 @@ jobs:
         with:
           install-command: npm install @badeball/cypress-cucumber-preprocessor
           build: npm run build --if-present
-          start: npm start
+          start: npx cypress run
       - name: Generate report
         run: cd e2e && npm run cy:report
       - name: Upload report
