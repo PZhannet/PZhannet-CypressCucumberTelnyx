@@ -11,8 +11,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-          working-directory: e2e
-          install-command: npm install
+          install-command: npm install @badeball/cypress-cucumber-preprocessor
           build: npm run build
           start: npm start
       - name: Generate report
