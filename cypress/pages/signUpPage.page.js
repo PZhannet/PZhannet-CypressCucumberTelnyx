@@ -1,6 +1,6 @@
-import mainPage from "../pages/mainPage.page"
+import mainPage from "./mainPage.page"
 
-export default new class SignUp extends mainPage {
+export default new class SignUpPage extends mainPage {
     constructor() {
         super(),
         this.logInLink = ()=> cy.get('[href*=".telnyx.com/#"]'),

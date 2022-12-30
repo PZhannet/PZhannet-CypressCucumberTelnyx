@@ -1,27 +1,27 @@
 const { Given, When, Then } = require("@badeball/cypress-cucumber-preprocessor");
-import signUp from "../pages/signUp.page"
+import signUpPage from "../pages/signUpPage.page"
 
 Given("A web browser is at the telnyx home page", ()=> {
-    signUp.openMainPage();
-    signUp.acceptCookies();
+    signUpPage.openMainPage();
+    signUpPage.acceptCookies();
 });
 When("A user clicks Sign-up button", () => {
-    signUp.clickSignUpBtn();
+    signUpPage.clickSignUpBtn();
 });
 When("A user clicks Log in link", ()=>{
-    signUp.clicklogInLink();
+    signUpPage.clicklogInLink();
 })
 Then("A user should see a Log in page", () => {
-    signUp.urlPage().should('include','/sign-in')
+    signUpPage.urlPage().should('include','/sign-in')
 });
 When("A user clicks Create Account button", ()=>{
-    signUp.clickCreateAccountBtn();
+    signUpPage.clickCreateAccountBtn();
 })
 Then("A user should see a FullName error messages", ()=>{
-    signUp.errorMessageFullName().should('be.visible')
+    signUpPage.errorMessageFullName().should('be.visible')
     .and('have.text','This field is required.');
 });
 Then("A user should see a WorkEmail error messages", ()=>{
-    signUp.errorMessageWorkEmail().should('be.visible')
+    signUpPage.errorMessageWorkEmail().should('be.visible')
     .and('have.text','This field is required.');
 });

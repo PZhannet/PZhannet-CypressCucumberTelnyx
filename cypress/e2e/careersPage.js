@@ -1,5 +1,5 @@
 const { Given, When, Then } = require("@badeball/cypress-cucumber-preprocessor");
-import careersPage from "../pages/careers.page"
+import careersPage from "../pages/careersPage.page"
 
 Given("A web browser is at the telnyx home page", ()=> {
     careersPage.openMainPage();

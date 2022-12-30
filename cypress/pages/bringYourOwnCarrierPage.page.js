@@ -1,6 +1,6 @@
-import mainPage from "../pages/mainPage.page"
+import mainPage from "./mainPage.page"
 
-export default new class BringYourOwnCarrier extends mainPage {
+export default new class BringYourOwnCarrierPage extends mainPage {
     constructor() {
         super(),
         this.bringYourOwnCarrierLinlk = ()=> {return cy.contains('Bring Your Own Carrier')},

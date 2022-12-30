@@ -1,4 +1,4 @@
-import mainPage from "../pages/mainPage.page"
+import mainPage from "./mainPage.page"
 
 export default new class IoTDataPlans extends mainPage {
     constructor() {
