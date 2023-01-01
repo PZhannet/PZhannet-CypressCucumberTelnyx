@@ -1,10 +1,9 @@
 ## Project description
 
-    In this project created the:
-     1) 15 test cases to test the functionality of the  https://telnyx.com website;
-     2) test cases automated via Cypress framework with the Cucumber tool;
-     3) realized Pipeline on GitHub;
-     4) implemented automatic report deployment to GitHub Pages.
+    -   15 test cases were created to test the functionality of the Telnix website.
+    -   They are automated using the cypress framework and the cucumber tool.
+    -   Implemented a Pipeline on GitHub.
+    -   Automatic deployment of the report on GitHub pages has been implemented.
 
 ## Technologies
 
@@ -14,7 +13,7 @@
 
 ## Project set up 
 
-    To clone progect and run it: 
+    To clone the project and run it:
     $ git clone https://github.com/PZhannet/CypressCucumberTelnyx.org
     $ npm install
 
@@ -31,10 +30,10 @@
 
 ## Report
 
-    This project uses a Mochawesome reporter. To merge and generate a report should use commands:
+    This project uses a Mochawesome reporter. To merge and generate a report should use the commands:
     $ npm run report:merge
     $ npm run report:generate
-    Reports will be saved in the:
+    The report saves in the:
     ..\docs\index.html
 
 ## GitHub Pages
