@@ -1,7 +1,7 @@
 ## Project description
 
     -   15 test cases were created to test the functionality of the Telnyx website.
-    -   They are automated using the cypress framework and the cucumber tool.
+    -   They are automated using the Cypress framework and the Cucumber tool.
     -   Implemented a Pipeline on GitHub.
     -   Automatic deployment of the report on GitHub pages has been implemented.
 
