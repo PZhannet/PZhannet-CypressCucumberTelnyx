@@ -1,7 +1,7 @@
 Feature: Number-lookup page 
 Background:
     Given A web browser is at the telnyx home page
-  Scenario: Valid value "country code" from Country Listbox
+  Scenario: Checking the correct display of the country code when selecting a country from the list of countries
     When A user clicks the Number-lookup link
     And A user clicks country Listbox
     And A user chooses country "<country>"
@@ -13,11 +13,11 @@ Background:
     | Canada  | +1          |
     | Italy   | +39         |
     
-  Scenario: Success click "Explore use-case guides" button
+  Scenario: Checking the click of the"Explore use-case guides" button
     When A user clicks the Number-lookup link
     And A user clicks Explore use-case guides button
     Then A user should see the Telnyx Developers Messaging page
-  Scenario: Success click "Elastic SIP Trunking" Link
+  Scenario: Checking the click of the "Elastic SIP Trunking" Link
     When A user clicks the Number-lookup link
     And A user clicks Elastic SIP Trunking Link
     Then A user should see the Thesip-trunks page

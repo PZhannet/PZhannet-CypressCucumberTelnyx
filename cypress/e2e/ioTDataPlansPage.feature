@@ -1,7 +1,7 @@
 Feature:  IoT-data-plans Page
 Background:
     Given A web browser is at the telnyx home page
-  Scenario: Success click country in 'See IoT data plans and pricing in" Listbox
+  Scenario: Checking the ability to select a country from the 'See IoT data plans and pricing in" Listbox.
     When A user mouseovers the link to the Pricing page "Pricing"
     And A user presses Wireless link
     And A user clicks on See IoT data plans and pricing in Link
@@ -12,7 +12,7 @@ Background:
     | Canada  | /ca           |
     | Chile   | /cl           |
     | Poland  | /pl           |
-  Scenario: Success click on 'How does pricing work for IoT data plans?' question
+  Scenario: Checking the click of the 'How does pricing work for IoT data plans?' link
     When A user mouseovers the link to the Pricing page "Pricing"
     And A user presses Wireless link
     And A user clicks How does pricing work for IoT data plans? question
