@@ -1,10 +1,10 @@
 const { Given, When, Then } = require("@badeball/cypress-cucumber-preprocessor");
-import bringYourOwnCarrierPage from "../pages/bringYourOwnCarrierPage.page"
+import bringYourOwnCarrierPage from "../../pages/bringYourOwnCarrierPage.page"
 
-Given("A web browser is at the telnyx home page", ()=> {
+/*Given("A web browser is at the telnyx home page", ()=> {
     bringYourOwnCarrierPage.openMainPage();
     bringYourOwnCarrierPage.acceptCookies();
-});
+});*/
 
 When("A user mouseovers the link to the Resources page {string}", (link) => {
     bringYourOwnCarrierPage.mouseoverResourcesPageLink(link);

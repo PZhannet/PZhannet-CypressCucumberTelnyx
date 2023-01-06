@@ -1,14 +1,14 @@
 const { Given, When, Then } = require("@badeball/cypress-cucumber-preprocessor");
-import signUpPage from "../pages/signUpPage.page"
+import signUpPage from "../../pages/signUpPage.page"
 
-Given("A web browser is at the telnyx home page", ()=> {
+/*Given("A web browser is at the telnyx home page", ()=> {
     signUpPage.openMainPage();
     signUpPage.acceptCookies();
-});
+});*/
 When("A user clicks Sign-up button", () => {
     signUpPage.clickSignUpBtn();
 });
-When("A user clicks Log in link", ()=>{
+When("A user clicks Log in link on sign-up page", ()=>{
     signUpPage.clicklogInLink();
 })
 Then("A user should see a Log in page", () => {

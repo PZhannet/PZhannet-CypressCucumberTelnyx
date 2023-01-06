@@ -1,10 +1,10 @@
 const { Given, When, Then } = require("@badeball/cypress-cucumber-preprocessor");
-import ioTDataPlansPage from "../pages/ioTDataPlansPage.page"
+import ioTDataPlansPage from "../../pages/ioTDataPlansPage.page"
 
-Given("A web browser is at the telnyx home page", ()=> {
+/*Given("A web browser is at the telnyx home page", ()=> {
     ioTDataPlansPage.openMainPage();
     ioTDataPlansPage.acceptCookies();
-});
+});*/
 When("A user mouseovers the link to the Pricing page {string}", (link) => {
     ioTDataPlansPage.mouseoverPricingPageLink(link);
 });

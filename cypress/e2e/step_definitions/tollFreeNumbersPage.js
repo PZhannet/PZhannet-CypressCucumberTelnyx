@@ -1,10 +1,10 @@
 const { Given, When, Then } = require("@badeball/cypress-cucumber-preprocessor");
-import tollFreeNumbersPage from "../pages/tollFreeNumbersPage.page"
+import tollFreeNumbersPage from "../../pages/tollFreeNumbersPage.page"
 
-Given("A web browser is at the telnyx home page", ()=> {
+/*Given("A web browser is at the telnyx home page", ()=> {
     tollFreeNumbersPage.openMainPage();
     tollFreeNumbersPage.acceptCookies();
-});
+});*/
 When("A user clicks the Read customer story Link", () => {
     tollFreeNumbersPage.clickReadCustomerStoryLink();
 });

@@ -24,6 +24,5 @@ module.exports = defineConfig({
     supportFile: false,
     setupNodeEvents,
     baseUrl: "https://telnyx.com",
-  },
-  
+  }
 });

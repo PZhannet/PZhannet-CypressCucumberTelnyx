@@ -1,10 +1,10 @@
 const { Given, When, Then } = require("@badeball/cypress-cucumber-preprocessor");
-import numberLookupPage from "../pages/numberLookupPage.page"
+import numberLookupPage from "../../pages/numberLookupPage.page"
 
-Given("A web browser is at the telnyx home page", ()=> {
+/*Given("A web browser is at the telnyx home page", ()=> {
     numberLookupPage.openMainPage();
     numberLookupPage.acceptCookies();
-});
+});*/
 When("A user clicks the Number-lookup link", () => {
     numberLookupPage.clickNumberLookupLink();
 });

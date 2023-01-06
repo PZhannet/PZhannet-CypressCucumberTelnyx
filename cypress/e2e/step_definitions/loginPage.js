@@ -1,10 +1,10 @@
 const { Given, When, Then } = require("@badeball/cypress-cucumber-preprocessor");
-import loginPage from "../pages/logInPage.page"
+import loginPage from "../../pages/logInPage.page"
 
-Given("A web browser is at the telnyx home page", ()=> {
+/*Given("A web browser is at the telnyx home page", ()=> {
   loginPage.openMainPage();
   loginPage.acceptCookies();
-});
+});*/
 When("A user clicks Log in link", ()=>{
   loginPage.clickLogInLink();
 });
